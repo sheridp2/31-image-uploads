@@ -37,6 +37,8 @@
   * Create a component for displaying a thumbnail for a particular pic
     * this should include a button that will trigger a **DELETE** request to the `slugram-backend` API and delete the photo from the gallery
   * Create a component for displaying the thumbnails for photos in a gallery
+
+## Stretch
   * Add the ability to select a gallery and have it's pictures displayed using the thumbnail component
 
 ## POST `/api/gallery`
