@@ -41,7 +41,6 @@ module.exports = [
       })
       .then(
         res => {
-          console.log('Got RESULTS', res);
           gallery.pics.push(res.data)
           return res.data
         },
