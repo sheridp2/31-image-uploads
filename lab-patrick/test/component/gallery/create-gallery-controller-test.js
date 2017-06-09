@@ -24,7 +24,7 @@ describe('Create Gallery Component', function(){
 
   afterEach(done => {
     this.$window.localStorage.removeItem('token');
-    this.$httpBackend.flush(1)
+    // this.$httpBackend.flush(1)
     this.$rootScope.$apply()
     done();
   });

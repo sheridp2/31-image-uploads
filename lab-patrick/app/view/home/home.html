@@ -6,13 +6,6 @@
   <h2>Welcome to the home page!</h2>
 
   <create-gallery></create-gallery>
-  <br>
-  <select
-  name="gallery selecttion"
-  ng-options="item as item.name for item in homeCtrl.galleries track by item._id"
-  ng-model="homeCtrl.currentGallery">
-  <option value="" disabled selected>Select Gellery</option>
-  </select>
 
   <ul>
     <gallery-item
@@ -21,6 +14,15 @@
     currentGalllery="homeCtrl.currentGallery"
     galleries="homeCtrl.galleries"></gallery-item>
   </ul>
+  <br>
+
+  <select
+    name="gallery selection"
+    ng-options="item as item.name for item in homeCtrl.galleries track by item._id"
+    ng-model="homeCtrl.currentGallery">
+    <option value="" disabled selected>Select Gellery</option>
+  </select>
+
 
  <thumbnail-container ng-if="homeCtrl.currentGallery"  gallery="homeCtrl.currentGallery"></thumbnail-container>
 </section>
