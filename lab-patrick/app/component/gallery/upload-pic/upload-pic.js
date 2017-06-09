@@ -15,7 +15,6 @@ module.exports = {
         this.pic = {};
 
         this.uploadPic = () => {
-          console.log('SHIT', this.pic);
           picService.uploadPic(this.gallery, this.pic)
           .then(
             () => {
@@ -24,8 +23,7 @@ module.exports = {
               this.pic.file = null;
             },
             err =>{
-              console.log('ASLFHLKJAF:JFLKFNL');
-              $log.error(err)
+              $log.error(err);
             }
           );
         };

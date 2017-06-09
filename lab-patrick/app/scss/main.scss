@@ -28,6 +28,9 @@ body {
   padding-left: .5em;
 }
 
+select{
+  @include buttoner
+}
 
 form{
   @include fonter;
