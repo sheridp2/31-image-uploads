@@ -26,3 +26,6 @@ context.keys().forEach( key => cfgram.service(camelcase(path.basename(key, '.js'
 
 context = require.context('./component/', true, /\.js$/);
 context.keys().forEach( key => cfgram.component(camelcase(path.basename(key, '.js')), context(key)));
+
+context = require.context('./filter/', true, /\/js$/);
+context.keys().forEach(key=> cfgram.filter(camelcase(path.basename(key, '.js')), context(key)));
