@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "webpack-dev-server --inline --hot",
     "build": "webpack",
-    "test": "karma start --auto-watch"
+    "test": "karma start --single-run"
   },
   "keywords": [],
   "author": "Patrick Sheridan",
