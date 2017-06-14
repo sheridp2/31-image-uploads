@@ -2,6 +2,7 @@
 
 require('./scss/reset.scss');
 require('./scss/main.scss');
+//add more scss
 
 const path = require('path');
 const angular = require('angular');
